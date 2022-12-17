@@ -13,5 +13,6 @@ describe('Send Notification', () => {
     });
 
     expect(notificationsRepository.notifications).toHaveLength(1);
+    expect(notificationsRepository.notifications[0]).toEqual(notification);
   });
 });
